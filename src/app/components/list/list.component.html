@@ -1,4 +1,6 @@
-<p *ngFor="let city of cities">{{ city }}</p>
-<hr />
-<p>{{ data }}</p>
-<button (click)="onClick()">Click me!</button>
+<div *ngFor="let item of data">
+  <p>Grad: {{ item.name }}</p>
+  <p>Temperatura: {{ item.temp }}</p>
+  <p>Vetar: {{ item.wind }}</p>
+  <hr />
+</div>

@@ -1,19 +1,20 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "app-list",
   templateUrl: "./list.component.html",
-  styleUrls: ["./list.component.css"]
+  styleUrls: ["./list.component.css"],
 })
 export class ListComponent implements OnInit {
-  data = "";
-  cities = ["London", "Novi Sad", "Vrbas"];
+  @Input() data;
   constructor() {}
 
   ngOnInit(): void {}
 
   onClick() {
-    this.data = "Clicked!!!";
-    this.cities.push("test");
+    console.log(this.data);
+
+    // this.data = "Clicked!!!";
+    // this.cities.push("test");
   }
 }
