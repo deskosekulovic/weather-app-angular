@@ -1,4 +1,2 @@
-<app-input></app-input>
-<p>testing</p>
-<p>test branch</p>
-<app-list></app-list>
+<app-input (detectChange)="onChange($event)" [city]="city"></app-input>
+<app-list [data]="data"></app-list>
